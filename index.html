@@ -12,18 +12,23 @@
     <h1 class="heading">Cash Register</h1>
     <p class="description">Enter the bill amount and cash given by the customer to get the number of denominations to return.</p>
     <label for="bill-amount">Bill Amount: </label>
-    <input id="bill-amount" type="text"/>
-    <!-- <button>Next</button> -->
+    <input id="bill-amount" type="number"/>
+    <button id="nxtBtn">Next</button>
+  </div>
+
+  <div class="cashGivenInput">  
     <label for="cash-given">Amount Given</label>
     <input id="cash-given" type="text"/>
     <button id="chceck-button">Check</button>
     <table class="change-table">
+  </div>    
       <p id="error-message"></p>
       <caption>Return Change</caption>
      <tr>
        <th>
          No. of Notes
        </th>
+          <td class="no-of-notes"></td>
           <td class="no-of-notes"></td>
           <td class="no-of-notes"></td>
           <td class="no-of-notes"></td>
@@ -45,8 +50,6 @@
      </tr>
 
     </table>
-
-  </div>
 </body>
 <script src="/index.js"></script>
 
