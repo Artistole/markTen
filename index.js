@@ -21,12 +21,13 @@ nxtBtn.addEventListener('click', ()=>{
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() 
 {
+    clearNoOfNotes()
     message.style.display = "none";
-    if(billAmount.value > 0)
+    if(Number(billAmount.value) > 0 && Number(cashGiven.value) > 0)
     {
-       if(cashGiven.value >= billAmount.value)
+       if(Number(cashGiven.value) >= Number(billAmount.value))
        {
-           const amountToBeReturned = cashGiven.value - billAmount.value;
+           const amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
            calculateChange(amountToBeReturned);
        }
        else
@@ -60,6 +61,11 @@ function showMessage(msg)
     message.innerText = msg;
 }
 
+function clearNoOfNotes(){
+    for(let notes of noOfNotes){
+        notes.innerText = "";
+    }
+}
 
 
 
