@@ -56,7 +56,7 @@ button{
     border: none;
     margin: 1rem auto 0;
     background-color:var(--secondary-color);
-    color: var(--primary-color);
+    color: black;
     font-weight: bold;
     border-radius: 20px;
 }
