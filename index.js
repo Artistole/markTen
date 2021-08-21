@@ -23,7 +23,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount()
 {
     clearNoOfNotes()
     message.style.display = "none";
-    if(Number(billAmount.value) > 0 && Number(cashGiven.value) > 0)
+    if(Number(billAmount.value) >0 )
     {
        if(Number(cashGiven.value) >= Number(billAmount.value))
        {
