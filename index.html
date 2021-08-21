@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section class="section">
   <div class="container">
     <h1 class="heading">Cash Register</h1>
     <p class="description">Enter the bill amount and cash given by the customer to get the number of denominations to return.</p>
@@ -22,9 +23,13 @@
     <button id="chceck-button">Check</button>
     <table class="change-table">
   </div>    
+    
       <p id="error-message"></p>
-      <caption>Return Change</caption>
-     <tr>
+
+    <div class="changeReturn"></div>
+      <caption class="label">Return Change</caption>
+     <div id="output">
+      <tr>
        <th>
          No. of Notes
        </th>
@@ -48,8 +53,11 @@
        <td>5</td>
        <td>1</td>
      </tr>
-
+    
     </table>
+  </div>
+</div>
+  </section>
 </body>
 <script src="/index.js"></script>
 
